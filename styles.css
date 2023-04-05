@@ -11,6 +11,7 @@ body {
   height: 100%;
 }
 body {
+  background-color: hsl(210, 46%, 95%);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -40,4 +41,44 @@ h6 {
 #root,
 #__next {
   isolation: isolate;
+}
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container{
+  font-size: .812rem;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.card{
+  max-width: 90%;
+  background-color: white;
+}
+.header-image-container{
+  height: 220px;
+}
+.main-content{
+  padding: 2rem;
+}
+h1{
+  font-size: 1.1rem;
+}
+.bottom-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pfp-container{
+  width: 50px;
+}
+.dark-color-txt{
+  color: hsl(217, 19%, 35%);
+}
+.desat-color-txt{
+  color: hsl(214, 17%, 51%);
 }
