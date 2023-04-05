@@ -86,3 +86,6 @@ h1{
 .desat-color-txt{
   color: hsl(214, 17%, 51%);
 }
+.user-info{
+  margin-right: 50px;
+}
