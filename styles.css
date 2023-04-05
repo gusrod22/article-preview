@@ -58,9 +58,16 @@ img{
 .card{
   max-width: 90%;
   background-color: white;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+
 }
 .header-image-container{
   height: 220px;
+}
+.header-image{
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 .main-content{
   padding: 2.2rem;
