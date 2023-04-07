@@ -78,12 +78,13 @@ h1{
 }
 .bottom-card{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 2.2rem 1.5rem 2.2rem ;
+  padding: 1.5rem 2.2rem;
 }
 .pfp-container{
   width: 50px;
+  margin-right: 12px;
 }
 .pfp-image{
   border-radius: 50px;
@@ -93,8 +94,14 @@ h1{
   font-weight: 700;
 
 }
-.desat-color-txt{
+.desat-color-txt, .share-text{
   color: hsl(214, 17%, 51%);
+}
+.share-text{
+  font-size: 1rem;
+}
+.user-section{
+  display: flex;
 }
 .user-info{
   margin-right: 30px;
@@ -103,4 +110,20 @@ h1{
   background-color: hsl(210, 46%, 95%);
   padding: 10px;
   border-radius: 30px;
+}
+.share-info, .share-icons-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.share-info{
+  width: 170px;
+  text-transform: uppercase;
+}
+.share-icons-container{
+  width: 90px;
+  margin-right: 10px;
+}
+.hidden{
+  display: none;
 }
