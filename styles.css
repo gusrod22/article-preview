@@ -76,13 +76,11 @@ h1{
   font-size: 1rem;
   padding-bottom: 10px;
 }
-.main-paragraph{
-  padding-bottom: 35px;
-}
 .bottom-card{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0 2.2rem 1.5rem 2.2rem ;
 }
 .pfp-container{
   width: 50px;
