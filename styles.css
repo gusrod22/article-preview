@@ -152,5 +152,13 @@ h1{
   .header-image{
     max-height: 100%;
   }
+  .share-info{
+    position: absolute;
+    bottom: 90px;
+    right: -40px;
+    width: 205px;
+    padding: .7rem;
+    border-radius: 5px;
+  }
 }
 
