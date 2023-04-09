@@ -29,11 +29,30 @@ shareButton.addEventListener("click", () => {
     // viewport width is less than 1440px, so change the design for both userSection and shareInfo
     userSection.classList.toggle("hidden");
     shareInfo.classList.toggle("hidden");
+    shareButton.style.backgroundColor = "hsl(214, 17%, 51%)"
+    document
+    .querySelector(".svg-container svg path")
+    .setAttribute("fill", "#fff");
+
+
 
     if (userSection.classList.contains("hidden")) {
       bottomCard.style.backgroundColor = "hsl(217, 19%, 35%)";
     } else {
       bottomCard.style.backgroundColor = originalBackgroundColor;
     }
+  }
+});
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 1440) {
+    shareInfo.classList.add("hidden");
+    userSection.classList.remove("hidden");
+    shareButton.classList.remove("active");
+    shareButton.style.backgroundColor = "hsl(210, 46%, 95%)"
+    document
+    .querySelector(".svg-container svg path")
+    .setAttribute("fill", "#6E8098");
+    bottomCard.style.backgroundColor = originalBackgroundColor;
   }
 });
