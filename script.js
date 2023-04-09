@@ -48,6 +48,8 @@ shareButton.addEventListener("click", () => {
   }
 });
 
+// This code block adjusts the layout when the window is resized to a width less than 1440 pixels by hiding/showing elements and updating styles.
+
 window.addEventListener("resize", () => {
   if (window.innerWidth < 1440) {
     shareInfo.classList.add("hidden");
