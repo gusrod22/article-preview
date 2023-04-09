@@ -55,12 +55,12 @@ img{
   align-items: center;
   height: 100%;
 }
-.card{
-  max-width: 90%;
-  background-color: white;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-
+.card {
+	max-width: 60vh;
+	background-color: white;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	margin: 0 15px;
 }
 .header-image-container{
   height: 220px;
