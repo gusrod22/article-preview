@@ -61,8 +61,10 @@ img{
 	border-bottom-right-radius: 10px;
 	border-bottom-left-radius: 10px;
 	margin: 0 15px;
-}
-.header-image-container{
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+  
+}.header-image-container{
   height: 220px;
 }
 .header-image{
@@ -134,10 +136,15 @@ h1{
     max-width: 40%;
     height: 32%;
     display: flex;
+    border-bottom-left-radius: 10px
   }
   .header-image-container{
     min-width: 42%;
     height: 100%;
+  }
+  .header-image{
+    border-top-right-radius: 0;
+     border-bottom-left-radius: 10px
   }
   .responsive-container{
     position: relative;
