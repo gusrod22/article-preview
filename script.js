@@ -29,12 +29,16 @@ shareButton.addEventListener("click", () => {
     // viewport width is less than 1440px, so change the design for both userSection and shareInfo
     userSection.classList.toggle("hidden");
     shareInfo.classList.toggle("hidden");
-    shareButton.style.backgroundColor = "hsl(214, 17%, 51%)"
-    document
-    .querySelector(".svg-container svg path")
-    .setAttribute("fill", "#fff");
 
+    shareButton.classList.toggle("active");
 
+    if (shareButton.classList.contains("active")) {
+      shareButton.style.backgroundColor = "hsl(214, 17%, 51%)";
+      document.querySelector(".svg-container svg path").setAttribute("fill", "#fff");
+    } else {
+      shareButton.style.backgroundColor = "hsl(210, 46%, 95%)";
+      document.querySelector(".svg-container svg path").setAttribute("fill", "#6E8098");
+    }
 
     if (userSection.classList.contains("hidden")) {
       bottomCard.style.backgroundColor = "hsl(217, 19%, 35%)";
@@ -43,8 +47,6 @@ shareButton.addEventListener("click", () => {
     }
   }
 });
-
-// This code listens for window resize events and resets the layout by hiding/showing elements and updating styles when the viewport width is less than 1440 pixels.
 
 window.addEventListener("resize", () => {
   if (window.innerWidth < 1440) {
