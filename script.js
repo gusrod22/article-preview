@@ -44,6 +44,8 @@ shareButton.addEventListener("click", () => {
   }
 });
 
+// This code listens for window resize events and resets the layout by hiding/showing elements and updating styles when the viewport width is less than 1440 pixels.
+
 window.addEventListener("resize", () => {
   if (window.innerWidth < 1440) {
     shareInfo.classList.add("hidden");
